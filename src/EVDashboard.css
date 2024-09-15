@@ -1,0 +1,85 @@
+/* Style the overall dashboard container */
+.dashboard-container {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    padding: 20px;
+  }
+  
+  /* Dashboard title styling */
+  .dashboard-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the chart container */
+  .chart-container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for charts */
+  .chart-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Bar chart customization */
+  .recharts-bar-rectangle {
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .recharts-bar-rectangle:hover {
+    fill: #4caf50 !important; /* Change bar color on hover */
+  }
+  
+  /* Tooltip styling */
+  .recharts-tooltip-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  /* Add a button style */
+  .button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add responsive design for mobile devices */
+  @media (max-width: 768px) {
+    .chart-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
